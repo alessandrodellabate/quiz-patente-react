@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    user-select: none;
+    box-sizing: border-box;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+    padding: 0.5rem;
+    margin: 1rem;
+    background-color: rgba(180, 201, 180, 0.758);
+    width: 950px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 1rem;
+    background-color: rgb(58, 58, 58);
+    color: white;
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: rgb(58, 58, 58);
+    color: white;
+    text-align: center;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #979797;
+}
+
+.bar-1 {
+    gap: 0.25rem;
+}
+
+.bar-2 {
+    margin-top: 0.25rem;
+    font-size: 0.9rem;
+    gap: 0.2rem;
+}
+
+.bar-3 {
+    margin-top: 0.25rem;
+    font-size: 0.8rem;
+    gap: 0.2rem;
+}
+
+.bar-1 div, .bar-2 div, .bar-3 div{
+    flex-grow: 1;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
+.bar-1 div {
+    height: 40px;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    min-height: 30px;
+    background-color: white;
+    flex-basis: 100px;
+}
+
+.bar-2 div {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    min-height: 30px;
+    background-color: white;
+    flex-basis: 20px;
+}
+
+.bar-3 div {
+    place-items: center;
+    font-size: 0.7rem;
+    flex-basis: 15px;
+    min-height: 25px;
+    background-color: white;
+}
+
+.bar-1 .casellaConRisposta, .bar-2 .casellaConRisposta, .bar-3 .casellaConRisposta {
+    background-color: rgb(231, 241, 234);
+}
+
+.bar-1 .casellaSelezionata {
+    color: #C00;
+    font-weight: bold;
+}
+
+.bar-2 .casellaSelezionata, .bar-3 .casellaSelezionata {
+    color: #C00;
+    font-weight: bold;
+}
+
+.bar-3 .casellaConRisultato {
+    background-color: rgb(209, 59, 59);
+    color: white;
+}
+
+.container {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.figure {
+    background-color: white;
+    display: grid;
+    place-items: center;
+    min-width: 240px;
+    height: 240px;
+}
+
+.quiz {
+    align-self: stretch;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.domanda {
+    padding: 0.5rem;
+    flex-grow: 1;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.domanda p:first-child {
+    color: rgb(82, 82, 82);
+    line-height: 1.3;
+    flex-grow: 1;
+    font-size: 18px;
+}
+
+.domanda p:last-child {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    align-self: flex-start;
+}
+
+.risposta {
+    background-color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.risposta label {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: darkslategrey;
+    cursor: pointer;
+}
+
+.bottom-bar {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.tempo-restante {
+    width: 240px;
+    background-color: white;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.tempo-restante p:first-child {
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: darkslategrey;
+}
+
+.tempo-restante p:last-child {
+    color: rgb(82, 82, 82);
+    font-family: monospace;
+    font-size: 18px;
+}
+
+.navigazione {
+    flex-grow: 1;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigazione input {
+    min-width: 100px;
+    min-height: 30px;
+    cursor: pointer;
+    font: inherit;
+}
+
+.frecce {
+    display: flex;
+    gap: 1rem;
+}
